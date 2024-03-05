@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="239b1739-810b-42c4-9401-7fb8298a7fab" name="更改" comment="" />
+    <list default="true" id="90a72403-7094-4880-b805-6dd0b22b2775" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,44 +23,34 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2dGb8Hpkhw6xVFVG8YxSSFpNBWy" />
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="2dGlH6JeiJCtvXMXHn4zrlV2XSs" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
+    "last_opened_file_path": "C:/Users/Running Noob/Code Project/comment-project",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15039062",
-    "project.structure.side.proportion": "0.3402299",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "88edf2cfc0dc23bc13efdbff8c4b8a0e",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="CommentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="comment-project" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="comment-project" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HmDianPingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="comment-project" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.f.HmDianPingApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.f.CommentApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,12 +59,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="239b1739-810b-42c4-9401-7fb8298a7fab" name="更改" comment="" />
-      <created>1709637202500</created>
+      <changelist id="90a72403-7094-4880-b805-6dd0b22b2775" name="更改" comment="" />
+      <created>1709642204614</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709637202500</updated>
-      <workItem from="1709637204407" duration="2145000" />
+      <updated>1709642204614</updated>
+      <workItem from="1709642205756" duration="274000" />
+      <workItem from="1709642490696" duration="173000" />
     </task>
     <servers />
   </component>

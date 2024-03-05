@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @MapperScan("com.f.mapper")
 @SpringBootApplication
-public class HmDianPingApplication {
+public class CommentApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HmDianPingApplication.class, args);
+        SpringApplication.run(CommentApplication.class, args);
     }
 
 }
