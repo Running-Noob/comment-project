@@ -40,9 +40,13 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/Running Noob/Code Project/comment-project",
-    "project.structure.last.edited": "模块",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "项目",
     "project.structure.proportion": "0.15039062",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.3402299",
     "spring.configuration.checksum": "88edf2cfc0dc23bc13efdbff8c4b8a0e",
     "vue.rearranger.settings.migration": "true"
   }
@@ -65,7 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1709642204614</updated>
       <workItem from="1709642205756" duration="274000" />
-      <workItem from="1709642490696" duration="173000" />
+      <workItem from="1709642490696" duration="637000" />
     </task>
     <servers />
   </component>
