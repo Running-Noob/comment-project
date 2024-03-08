@@ -94,6 +94,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommentApplicationTests.testRedisIdWorker" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comment-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.f" />
+      <option name="MAIN_CLASS_NAME" value="com.f.CommentApplicationTests" />
+      <option name="METHOD_NAME" value="testRedisIdWorker" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CommentApplicationTests.testSaveShop2Redis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="comment-project" />
       <extension name="coverage">
@@ -119,6 +135,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentApplicationTests.testRedisIdWorker" />
         <item itemvalue="JUnit.CommentApplicationTests.testSaveShop2Redis" />
         <item itemvalue="JUnit.CommentApplicationTests.testLocalDataTime" />
         <item itemvalue="JUnit.CommentApplicationTests.name" />
@@ -137,7 +154,7 @@
       <workItem from="1709642490696" duration="1266000" />
       <workItem from="1709689746671" duration="4659000" />
       <workItem from="1709723754525" duration="28696000" />
-      <workItem from="1709871463046" duration="7539000" />
+      <workItem from="1709871463046" duration="19138000" />
     </task>
     <servers />
   </component>
