@@ -27,4 +27,11 @@ class CommentApplicationTests {
             System.out.println(id);
         }
     }
+
+    @Test
+    void testThread() {
+        String threadName = Thread.currentThread().getName();
+        Long threadId = Thread.currentThread().getId();
+        System.out.println(threadName + " - " + threadId);
+    }
 }

@@ -8,8 +8,11 @@ import com.f.service.ISeckillVoucherService;
 import com.f.service.IVoucherOrderService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.f.utils.RedisIdWorker;
+import com.f.utils.SimpleRedisLock;
 import com.f.utils.UserHolder;
 import jakarta.annotation.Resource;
+import org.springframework.aop.framework.AopContext;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,9 +27,10 @@ import java.time.LocalDateTime;
 public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, VoucherOrder> implements IVoucherOrderService {
     @Resource
     private ISeckillVoucherService seckillVoucherService;
-
     @Resource
     private RedisIdWorker redisIdWorker;
+    @Resource
+    private StringRedisTemplate stringRedisTemplate;
 
     @Override
     public Result seckillVoucher(Long voucherId) {
@@ -44,11 +48,23 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             // 5.库存不足，返回错误信息
             return Result.fail("库存不足");
         }
-        return createVoucherOrder(voucherId);
+        // 使用分布式锁（对同一个用户的id上锁）
+        SimpleRedisLock lock = new SimpleRedisLock("order:" + UserHolder.getUser().getId(), stringRedisTemplate);
+        // 获取锁
+        boolean isLock = lock.tryLock(10L);
+        if (!isLock) {   // 获取锁失败
+            return Result.fail("您已经购买过该特价券，每人仅限一张");
+        }
+        try {
+            IVoucherOrderService proxy = (IVoucherOrderService) AopContext.currentProxy();  // 代理对象才能实现事务
+            return proxy.createVoucherOrder(voucherId);
+        } finally {
+            lock.unlock();  // 释放锁
+        }
     }
 
     @Transactional
-    public synchronized Result createVoucherOrder(Long voucherId) { // 使用悲观锁
+    public Result createVoucherOrder(Long voucherId) {
         // 6.判断用户是否已经买过该特价券了
         Long userId = UserHolder.getUser().getId();
         long count = query().eq("user_id", userId).eq("voucher_id", voucherId)

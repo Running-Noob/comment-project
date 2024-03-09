@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -61,23 +62,14 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.CommentApplication">
-    <configuration name="CommentApplicationTests.name" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="comment-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.f.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.f" />
-      <option name="MAIN_CLASS_NAME" value="com.f.CommentApplicationTests" />
-      <option name="METHOD_NAME" value="name" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CommentApplication2">
     <configuration name="CommentApplicationTests.testLocalDataTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="comment-project" />
       <extension name="coverage">
@@ -126,6 +118,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommentApplicationTests.testThread" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comment-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.f" />
+      <option name="MAIN_CLASS_NAME" value="com.f.CommentApplicationTests" />
+      <option name="METHOD_NAME" value="testThread" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentApplicationTests.testThreadId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comment-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.f" />
+      <option name="MAIN_CLASS_NAME" value="com.f.CommentApplicationTests" />
+      <option name="METHOD_NAME" value="testThreadId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CommentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="comment-project" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.f.CommentApplication" />
@@ -133,12 +157,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommentApplication2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="comment-project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.f.CommentApplication" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8082" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.CommentApplicationTests.testLocalDataTime" />
+      <item itemvalue="JUnit.CommentApplicationTests.testRedisIdWorker" />
+      <item itemvalue="JUnit.CommentApplicationTests.testSaveShop2Redis" />
+      <item itemvalue="JUnit.CommentApplicationTests.testThread" />
+      <item itemvalue="JUnit.CommentApplicationTests.testThreadId" />
+      <item itemvalue="Spring Boot.CommentApplication" />
+      <item itemvalue="Spring Boot.CommentApplication2" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentApplicationTests.testThread" />
+        <item itemvalue="JUnit.CommentApplicationTests.testThreadId" />
         <item itemvalue="JUnit.CommentApplicationTests.testRedisIdWorker" />
         <item itemvalue="JUnit.CommentApplicationTests.testSaveShop2Redis" />
         <item itemvalue="JUnit.CommentApplicationTests.testLocalDataTime" />
-        <item itemvalue="JUnit.CommentApplicationTests.name" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +196,8 @@
       <workItem from="1709642490696" duration="1266000" />
       <workItem from="1709689746671" duration="4659000" />
       <workItem from="1709723754525" duration="28696000" />
-      <workItem from="1709871463046" duration="19138000" />
+      <workItem from="1709871463046" duration="19185000" />
+      <workItem from="1709946225305" duration="7176000" />
     </task>
     <servers />
   </component>
