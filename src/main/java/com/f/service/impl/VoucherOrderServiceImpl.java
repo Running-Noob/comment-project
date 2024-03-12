@@ -8,9 +8,10 @@ import com.f.service.ISeckillVoucherService;
 import com.f.service.IVoucherOrderService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.f.utils.RedisIdWorker;
-import com.f.utils.SimpleRedisLock;
 import com.f.utils.UserHolder;
 import jakarta.annotation.Resource;
+import org.redisson.api.RLock;
+import org.redisson.api.RedissonClient;
 import org.springframework.aop.framework.AopContext;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
@@ -31,6 +32,8 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
     private RedisIdWorker redisIdWorker;
     @Resource
     private StringRedisTemplate stringRedisTemplate;
+    @Resource
+    private RedissonClient redissonClient;
 
     @Override
     public Result seckillVoucher(Long voucherId) {
@@ -48,10 +51,10 @@ public class VoucherOrderServiceImpl extends ServiceImpl<VoucherOrderMapper, Vou
             // 5.库存不足，返回错误信息
             return Result.fail("库存不足");
         }
-        // 使用分布式锁（对同一个用户的id上锁）
-        SimpleRedisLock lock = new SimpleRedisLock("order:" + UserHolder.getUser().getId(), stringRedisTemplate);
+        // 使用Redisson的分布式锁（对同一个用户的id上锁）
+        RLock lock = redissonClient.getLock("lock:order:" + UserHolder.getUser().getId());
         // 获取锁
-        boolean isLock = lock.tryLock(10L);
+        boolean isLock = lock.tryLock();
         if (!isLock) {   // 获取锁失败
             return Result.fail("您已经购买过该特价券，每人仅限一张");
         }

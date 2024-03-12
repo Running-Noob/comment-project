@@ -55,6 +55,7 @@
     &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15039062&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.3402299&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;88edf2cfc0dc23bc13efdbff8c4b8a0e&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -69,7 +70,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CommentApplication2">
+  <component name="RunManager" selected="Spring Boot.CommentApplication">
     <configuration name="CommentApplicationTests.testLocalDataTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="comment-project" />
       <extension name="coverage">
@@ -197,7 +198,11 @@
       <workItem from="1709689746671" duration="4659000" />
       <workItem from="1709723754525" duration="28696000" />
       <workItem from="1709871463046" duration="19185000" />
-      <workItem from="1709946225305" duration="7176000" />
+      <workItem from="1709946225305" duration="7587000" />
+      <workItem from="1709984369070" duration="21000" />
+      <workItem from="1710243982895" duration="11000" />
+      <workItem from="1710244480535" duration="1795000" />
+      <workItem from="1710248855255" duration="3271000" />
     </task>
     <servers />
   </component>
