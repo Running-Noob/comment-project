@@ -71,7 +71,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.CommentApplication">
-    <configuration name="CommentApplicationTests.testLocalDataTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CommentApplicationTests.testLong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="comment-project" />
       <extension name="coverage">
         <pattern>
@@ -81,7 +81,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.f" />
       <option name="MAIN_CLASS_NAME" value="com.f.CommentApplicationTests" />
-      <option name="METHOD_NAME" value="testLocalDataTime" />
+      <option name="METHOD_NAME" value="testLong" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,7 +167,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.CommentApplicationTests.testLocalDataTime" />
+      <item itemvalue="JUnit.CommentApplicationTests.testLong" />
       <item itemvalue="JUnit.CommentApplicationTests.testRedisIdWorker" />
       <item itemvalue="JUnit.CommentApplicationTests.testSaveShop2Redis" />
       <item itemvalue="JUnit.CommentApplicationTests.testThread" />
@@ -177,11 +177,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentApplicationTests.testLong" />
         <item itemvalue="JUnit.CommentApplicationTests.testThread" />
         <item itemvalue="JUnit.CommentApplicationTests.testThreadId" />
         <item itemvalue="JUnit.CommentApplicationTests.testRedisIdWorker" />
         <item itemvalue="JUnit.CommentApplicationTests.testSaveShop2Redis" />
-        <item itemvalue="JUnit.CommentApplicationTests.testLocalDataTime" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +202,8 @@
       <workItem from="1709984369070" duration="21000" />
       <workItem from="1710243982895" duration="11000" />
       <workItem from="1710244480535" duration="1795000" />
-      <workItem from="1710248855255" duration="3271000" />
+      <workItem from="1710248855255" duration="3410000" />
+      <workItem from="1710291636280" duration="12293000" />
     </task>
     <servers />
   </component>

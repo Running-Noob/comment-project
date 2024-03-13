@@ -34,4 +34,11 @@ class CommentApplicationTests {
         Long threadId = Thread.currentThread().getId();
         System.out.println(threadName + " - " + threadId);
     }
+
+    @Test
+    void testLong() {
+        int i = 1;
+        long j = 1l;
+        System.out.println(i == j);
+    }
 }
