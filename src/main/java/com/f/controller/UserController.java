@@ -1,9 +1,11 @@
 package com.f.controller;
 
 
+import cn.hutool.core.bean.BeanUtil;
 import com.f.dto.LoginFormDTO;
 import com.f.dto.Result;
 import com.f.dto.UserDTO;
+import com.f.pojo.User;
 import com.f.pojo.UserInfo;
 import com.f.service.IUserInfoService;
 import com.f.service.IUserService;
@@ -81,4 +83,17 @@ public class UserController {
         // 返回
         return Result.ok(info);
     }
+
+    @GetMapping("/{id}")
+    public Result queryUserById(@PathVariable("id") Long userId){
+        // 查询详情
+        User user = userService.getById(userId);
+        if (user == null) {
+            return Result.ok();
+        }
+        UserDTO userDTO = BeanUtil.copyProperties(user, UserDTO.class);
+        // 返回
+        return Result.ok(userDTO);
+    }
+
 }
