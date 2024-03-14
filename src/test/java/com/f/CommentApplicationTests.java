@@ -6,12 +6,14 @@ import com.f.utils.RedisIdWorker;
 import jakarta.annotation.Resource;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.StringRedisTemplate;
 
 @SpringBootTest
 class CommentApplicationTests {
     @Resource
+    private StringRedisTemplate stringRedisTemplate;
+    @Resource
     private ShopServiceImpl shopService;
-
     @Resource
     private RedisIdWorker redisIdWorker;
 
@@ -40,5 +42,20 @@ class CommentApplicationTests {
         int i = 1;
         long j = 1l;
         System.out.println(i == j);
+    }
+
+    @Test
+    void testHyperLogLog() {
+        String[] ids = new String[1000];
+        int j;
+        for (int i = 0; i < 1000000; i++) {
+            j = i % 1000;
+            ids[j] = "user_" + (i);
+            if (j == 999) { // 每一千条数据推一次到Redis
+                stringRedisTemplate.opsForHyperLogLog().add("hll", ids);
+            }
+        }
+        Long size = stringRedisTemplate.opsForHyperLogLog().size("hll");    // 统计
+        System.out.println(size);
     }
 }

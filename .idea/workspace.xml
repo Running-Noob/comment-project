@@ -70,7 +70,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CommentApplication">
+  <component name="RunManager" selected="JUnit.CommentApplicationTests.testHyperLogLog">
+    <configuration name="CommentApplicationTests.testHyperLogLog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="comment-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.f" />
+      <option name="MAIN_CLASS_NAME" value="com.f.CommentApplicationTests" />
+      <option name="METHOD_NAME" value="testHyperLogLog" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CommentApplicationTests.testLong" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="comment-project" />
       <extension name="coverage">
@@ -98,22 +114,6 @@
       <option name="PACKAGE_NAME" value="com.f" />
       <option name="MAIN_CLASS_NAME" value="com.f.CommentApplicationTests" />
       <option name="METHOD_NAME" value="testRedisIdWorker" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CommentApplicationTests.testSaveShop2Redis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="comment-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.f.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.f" />
-      <option name="MAIN_CLASS_NAME" value="com.f.CommentApplicationTests" />
-      <option name="METHOD_NAME" value="testSaveShop2Redis" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,9 +167,9 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.CommentApplicationTests.testHyperLogLog" />
       <item itemvalue="JUnit.CommentApplicationTests.testLong" />
       <item itemvalue="JUnit.CommentApplicationTests.testRedisIdWorker" />
-      <item itemvalue="JUnit.CommentApplicationTests.testSaveShop2Redis" />
       <item itemvalue="JUnit.CommentApplicationTests.testThread" />
       <item itemvalue="JUnit.CommentApplicationTests.testThreadId" />
       <item itemvalue="Spring Boot.CommentApplication" />
@@ -177,11 +177,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CommentApplicationTests.testHyperLogLog" />
         <item itemvalue="JUnit.CommentApplicationTests.testLong" />
         <item itemvalue="JUnit.CommentApplicationTests.testThread" />
         <item itemvalue="JUnit.CommentApplicationTests.testThreadId" />
         <item itemvalue="JUnit.CommentApplicationTests.testRedisIdWorker" />
-        <item itemvalue="JUnit.CommentApplicationTests.testSaveShop2Redis" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +205,7 @@
       <workItem from="1710248855255" duration="3410000" />
       <workItem from="1710291636280" duration="16366000" />
       <workItem from="1710382870603" duration="5543000" />
-      <workItem from="1710396161598" duration="4457000" />
+      <workItem from="1710396161598" duration="6541000" />
     </task>
     <servers />
   </component>
